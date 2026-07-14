@@ -43,10 +43,10 @@
     /* Header */
     header.site { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line); background: rgba(10,10,11,.72); backdrop-filter: blur(14px); }
     header .row { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-    .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; }
-    .brand .cube { width: 24px; height: 24px; filter: drop-shadow(0 0 9px rgba(0,226,226,.55)); }
-    .brand .cube img { width: 100%; height: 100%; display: block; }
-    .brand .tag { font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-2); }
+    .brand { display: flex; align-items: center; gap: 13px; text-decoration: none; }
+    .brand .wm { height: 24px; width: auto; display: block; }
+    .brand .sep { width: 1px; height: 17px; background: var(--line-2); }
+    .brand .tag { font-family: var(--mono); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-3); }
     .nav { display: flex; align-items: center; gap: 20px; }
     .nav a.link { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); text-decoration: none; }
     .nav a.link:hover { color: var(--ink); }
@@ -121,7 +121,7 @@
     .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
     .step { border: 1px solid var(--line); border-radius: 14px; padding: 22px; position: relative; }
     .step .sn { font-family: var(--mono); font-size: 12px; color: var(--cyan); letter-spacing: .1em; }
-    .step h3 { margin: 14px 0 7px; font-size: 16px; font-weight: 700; }
+    .step h3 { margin: 0 0 7px; font-size: 16px; font-weight: 700; }
     .step p { margin: 0; color: var(--ink-2); font-size: 13.5px; line-height: 1.5; }
     .step code { font-family: var(--mono); font-size: 11px; background: var(--panel-2); padding: 1px 5px; border-radius: 4px; color: var(--ink-2); }
 
@@ -159,8 +159,9 @@
   <header class="site">
     <div class="wrap row">
       <a class="brand" href="#top">
-        <span class="cube"><img src="edge-cube.svg" alt="EDGE"></span>
-        <span class="tag">EDGE // Social&nbsp;Downloader</span>
+        <img class="wm" src="edge-wordmark.png" alt="EDGE Digital">
+        <span class="sep"></span>
+        <span class="tag">Social&nbsp;Downloader</span>
       </a>
       <nav class="nav">
         <a class="link" href="#quellen">Quellen</a>
@@ -185,7 +186,7 @@
       <div class="mock reveal" aria-hidden="true">
         <div class="mock-bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="t">EDGE // Social Downloader</span></div>
         <div class="mock-body">
-          <div class="mock-label">01 · Quelle</div>
+          <div class="mock-label">Quelle</div>
           <div class="mock-url"><span id="mockUrl">https://www.tiktok.com/@edge/video/…</span><span class="cursor"></span></div>
           <div class="mock-read"><span class="pl" id="mockLogo"></span><span class="nm">TikTok</span><span>· erkannt, kein Login nötig</span></div>
           <div class="mock-modes">
@@ -198,12 +199,12 @@
     </section>
 
     <section id="quellen">
-      <div class="sec-head reveal"><span class="n">01</span><h2>Über&nbsp;20 Quellen</h2><span class="l"></span></div>
+      <div class="sec-head reveal"><h2>Über&nbsp;20 Quellen</h2><span class="l"></span></div>
       <div class="plat-grid reveal" id="platGrid"></div>
     </section>
 
     <section id="features">
-      <div class="sec-head reveal"><span class="n">02</span><h2>Gebaut für den Alltag</h2><span class="l"></span></div>
+      <div class="sec-head reveal"><h2>Gebaut für den Alltag</h2><span class="l"></span></div>
       <div class="feat-grid">
         <div class="feat reveal"><span class="fi" data-icon="clapperboard"></span><h3>MP3, MP4 &amp; Bilder</h3><p>Audio, Video oder Foto-Post, je nach Link. Karussells kommen als ZIP.</p></div>
         <div class="feat reveal"><span class="fi" data-icon="captions"></span><h3>Transkript automatisch</h3><p>Bei YouTube kostenlos aus den Untertiteln, sonst per ElevenLabs. Sprache wird erkannt.</p></div>
@@ -215,12 +216,12 @@
     </section>
 
     <section id="start">
-      <div class="sec-head reveal"><span class="n">03</span><h2>In vier Schritten</h2><span class="l"></span></div>
+      <div class="sec-head reveal"><h2>In vier Schritten</h2><span class="l"></span></div>
       <div class="steps">
-        <div class="step reveal"><span class="sn">01</span><h3>Starten</h3><p>Doppelklick auf <code>start_…command</code>, der Browser öffnet sich von selbst.</p></div>
-        <div class="step reveal"><span class="sn">02</span><h3>Link einfügen</h3><p>Von YouTube, TikTok, Instagram, X und über 20 weiteren Quellen.</p></div>
-        <div class="step reveal"><span class="sn">03</span><h3>Format wählen</h3><p>MP3, MP4 oder Bilder, dazu Qualität und optional Transkript.</p></div>
-        <div class="step reveal"><span class="sn">04</span><h3>Fertig</h3><p>Die Datei landet lokal im Download-Ordner. Nach 3 Tagen räumt sich alles auf.</p></div>
+        <div class="step reveal"><h3>Starten</h3><p>Doppelklick auf <code>start_…command</code>, der Browser öffnet sich von selbst.</p></div>
+        <div class="step reveal"><h3>Link einfügen</h3><p>Von YouTube, TikTok, Instagram, X und über 20 weiteren Quellen.</p></div>
+        <div class="step reveal"><h3>Format wählen</h3><p>MP3, MP4 oder Bilder, dazu Qualität und optional Transkript.</p></div>
+        <div class="step reveal"><h3>Fertig</h3><p>Die Datei landet lokal im Download-Ordner. Nach 3 Tagen räumt sich alles auf.</p></div>
       </div>
     </section>
 
